@@ -1,0 +1,12 @@
+name: Opme
+author: DrakePork
+api-version: 1.14
+main: opme.main.Main
+version: 2.0
+commands:
+  opme:
+    description: Ops the player.
+    usage: /<command>
+  deopme:
+    description: Deops the player.
+    usage: /<command>
