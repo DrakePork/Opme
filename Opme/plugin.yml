@@ -2,11 +2,48 @@ name: Opme
 author: DrakePork
 api-version: 1.14
 main: opme.main.Main
-version: 2.0
+version: 1.1
 commands:
   opme:
     description: Ops the player.
     usage: /<command>
+    permission: opme.opme
+    permission-messsage: §cYou do not have permission to use this command.
   deopme:
     description: Deops the player.
     usage: /<command>
+    permission: opme.deopme
+    permission-messsage: §cYou do not have permission to use this command.
+  op:
+    description: Ops a player.
+    permission: opme.op
+    permission-messsage: §cYou do not have permission to use this command.
+  deop:
+    description: Deops a player
+    permission: opme.deop
+    permission-message: §cYou do not have permission to use this command.
+permissions:
+  opme.*:
+    description: Gives access to all commands
+    default: false
+    children:
+      opme.opme: true
+      opme.op: true
+      opme.deop: true
+      opme.deopme: true
+      opme.joinbypass: true
+  opme.opme:
+    description: Gives access to opme command
+    default: false
+  opme.deopme:
+    description: Gives access to deopme command
+    default: false
+  opme.op:
+    description: Gives access to op command
+    default: false
+  opme.deop:
+    description: Gives access to deop command
+    default: false
+  opme.joinbypass:
+    description: Bypasses deop on join
+    default: false
