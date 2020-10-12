@@ -1,0 +1,5 @@
+name: Opme
+version: ${project.version}
+main: src.com.drakepork.opme.Opme
+api-version: 1.16
+author: DrakePork
